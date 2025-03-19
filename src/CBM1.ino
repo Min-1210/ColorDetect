@@ -100,10 +100,10 @@ lcd.print("Color: ");
 lcd.print(color);  
 }
 void getColor() {
-    readRGB();  // Đọc giá trị RGB từ cảm biến
+    readRGB(); 
     
     int sum = red + grn + blu;
-    if (sum == 0) {  // Tránh chia cho 0
+    if (sum == 0) {
         color = "NO_COLOR";
         return;
     }
